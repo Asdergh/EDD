@@ -161,14 +161,3 @@ class YOLOv8Net(Module):
 
         
 
-if __name__ == "__main__":
-
-    inputs = th.Tensor(np.random.normal(0, 1.120, (32, 3, 128, 128)))
-    yolo_net = YOLOv8Net(hiden_channels=[
-        32, 
-        64, 
-        128
-    ])
-    yolo_out = yolo_net(inputs)
-    
-   

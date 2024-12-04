@@ -1,0 +1,1 @@
+#TODO write trainer class

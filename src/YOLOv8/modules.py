@@ -225,11 +225,3 @@ class Detect(Module):
             self._cll_head(inputs)
         ]
     
-if __name__ == "__main__":
-
-    inputs = th.Tensor(np.random.normal(0, 1.120, (32, 48, 32, 32)))
-    out = C2f(in_channels=48, out_channels=64)(inputs)
-    bbox, cll = Detect(in_channels=64)(out)
-
-    print(bbox.size(), cll.size())
-
